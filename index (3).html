@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Download video TikTok tanpa watermark, gratis dan cepat">
+  <meta property="og:title" content="TikTok Downloader — No Watermark">
+  <meta property="og:description" content="Download video TikTok tanpa watermark, gratis dan cepat">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>TikTok Downloader — No Watermark</title>
+</head>
+<body>
+  <header>
+    <h1 class="logo">TikTok<span>Downloader</span></h1>
+    <p class="tagline">Download video TikTok tanpa watermark — gratis &amp; cepat</p>
+  </header>
+
+  <main>
+    <section id="input-section">
+      <input type="url" id="tiktok-url" placeholder="Paste link TikTok di sini..." autocomplete="off">
+      <button id="download-btn" type="button">Download</button>
+      <p id="error-msg" class="error hidden"></p>
+    </section>
+
+    <section id="result-section" class="hidden">
+      <div id="video-thumbnail-wrapper">
+        <img id="video-thumbnail" src="" alt="Thumbnail video">
+      </div>
+      <div id="video-info">
+        <p id="video-author"></p>
+        <p id="video-desc"></p>
+      </div>
+      <div id="download-options">
+        <a id="btn-download-video" class="btn-dl" href="#" download>Download Video (No Watermark)</a>
+        <a id="btn-download-audio" class="btn-dl secondary" href="#" download>Download Audio MP3</a>
+      </div>
+    </section>
+
+    <div id="loading-overlay" class="hidden">
+      <div class="spinner" aria-hidden="true"></div>
+      <p>Sedang memproses...</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> TikTok Downloader. Untuk penggunaan pribadi.</p>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
